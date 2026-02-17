@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -22,17 +22,16 @@
     cursor: pointer;
 }
 
-/* box1 */
-.nav-logo {
+/* LOGO */
+.nav-logo, .logo {
     height: 50px;
     width: 100px;
-}
-.logo {
     background-image: url("amazon_logo.png");
     background-size: cover;
-    height: 50px;
-    width: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 .border {
     border: 1.5px solid transparent;
 }
@@ -40,7 +39,7 @@
     border: 1.5px solid white;
 }
 
-/* box2 */
+/* BOX2 */
 .add-first {
     color: #cccccc;
     font-size: 0.85rem;
@@ -54,7 +53,7 @@
     font-size: 1rem;
 }
 
-/* box3 */
+/* SEARCH */
 .nav-search {
     display: flex;
     justify-content: space-evenly;
@@ -88,7 +87,7 @@
     border: 2px solid orange;
 }
 
-/* box4 */
+/* NAV TEXT */
 span {
     font-size: 0.7rem;
 }
@@ -97,7 +96,7 @@ span {
     font-weight: 700;
 }
 
-/* cart */
+/* CART */
 .nav-cart i {
     font-size: 30px;
 }
@@ -132,25 +131,17 @@ span {
 }
 
 /* HERO */
-/* .hero-section {
-    background-image: url("hero_image.jpg");
-    background-size: cover;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-} */
-
 .hero-section {
     background-image: url("hero_image.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     height: 350px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
+
 .hero-mssg {
     background-color: white;
     color: black;
@@ -174,7 +165,7 @@ span {
     height: 400px;
     width: 23%;
     background-color: white;
-    padding: 20px 0px 15px;
+    padding: 20px 0 15px;
     margin-top: 15px;
 }
 .box-img {
@@ -213,8 +204,6 @@ ul a {
     color: #dddddd;
     text-decoration: none;
 }
-
-/* FOOT PANEL 3 */
 .foot-panel3 {
     background-color: #222f3d;
     color: white;
@@ -230,8 +219,6 @@ ul a {
     height: 50px;
     width: 100px;
 }
-
-/* FOOT PANEL 4 */
 .foot-panel4 {
     background-color: #131A22;
     color: white;
@@ -242,105 +229,4 @@ ul a {
 .pages {
     padding: 25px;
     color: white;
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .navbar {
-        height: auto;
-        padding: 10px;
-    }
-
-    .nav-search {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .panel-ops {
-        width: 100%;
-        text-align: center;
-        flex-wrap: wrap;
-    }
-
-    /* .hero-section {
-        height: 250px;
-    } */
-    .hero-section {
-        height: 280px;
-        background-size: contain;
-        background-position: center top;
-        background-color: #e2e7e6;
-    }
-
-    .hero-mssg {
-        width: 95%;
-        font-size: 0.75rem;
-    }
-
-    .box {
-        width: 90%;
-    }
-
-    .foot-link {
-        width: 45%;
-    }
-
-    .foot-panel4 {
-        height: auto;
-        padding: 15px 0;
-    }
-}
-
-/* ================= TABLET ================= */
-
-@media (min-width: 769px) and (max-width: 1024px) {
-
-    .nav-search {
-        width: 400px;
-    }
-
-    .box {
-        width: 45%;
-    }
-
-    .hero-section {
-        height: 300px;
-    }
-
-    .foot-link {
-        width: 40%;
-    }
-}
-
-/* ===== FIX FOR 850px PANEL BREAK ===== */
-
-@media (max-width: 900px) {
-
-    .panel {
-        flex-direction: column;
-        height: auto;
-        padding: 10px 0;
-        text-align: center;
-    }
-
-    .panel-ops {
-        width: 100%;
-        margin-top: 5px;
-    }
-
-    .panel-ops p {
-        display: inline-block;
-        margin: 6px;
-        font-size: 0.85rem;
-    }
-
-    .panel-deals {
-        margin-top: 5px;
-    }
 }
