@@ -132,9 +132,20 @@ span {
 }
 
 /* HERO */
+/* .hero-section {
+    background-image: url("hero_image.jpg");
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+} */
+
 .hero-section {
     background-image: url("hero_image.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 350px;
     display: flex;
     justify-content: center;
@@ -257,8 +268,14 @@ ul a {
         flex-wrap: wrap;
     }
 
-    .hero-section {
+    /* .hero-section {
         height: 250px;
+    } */
+    .hero-section {
+        height: 280px;
+        background-size: contain;
+        background-position: center top;
+        background-color: #e2e7e6;
     }
 
     .hero-mssg {
